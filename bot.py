@@ -17,12 +17,12 @@ bot = TelegramClient(
 
 )
 
-# force_sub_channel = getenv("FORCE_SUB", "my_introvert_world")
+force_sub_channel = getenv("FORCE_SUB", "pee_dablu")
 
 
 @bot.on(events.NewMessage(pattern='/start'))
 async def start(event):
-    await event.respond("Hi, I am link changer of Physics Wallah")
+    await event.respond("Hi, I am Link Changer of Physics Wallah")
 
         
 @bot.on(events.NewMessage(pattern='https://'))
@@ -50,5 +50,5 @@ async def change(event):
             await link_gen(link_hash, bot, event)
 
 
-logger.info("Bot started..")
+logger.info("Bot started...")
 bot.run_until_disconnected()
