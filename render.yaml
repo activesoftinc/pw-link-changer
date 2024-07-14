@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: PW Link changer
+    name: PW Link Changer
     runtime: python
     region: singapore
     branch: master
