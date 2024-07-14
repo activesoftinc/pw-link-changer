@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def do():
-    return jsonify({"status": "active", "name": "PW link changer"})
+    return jsonify({"status": "active", "name": "PW Link Changer"})
